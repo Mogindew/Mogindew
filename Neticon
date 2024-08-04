@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/thanhdat4461/OrionMoblie/main/source')))()
 local Window = OrionLib:MakeWindow({
-    Name = "Neticon (UNRELEASED)",
+    Name = "Neticon (RELEASED)",
     HidePremium = false,
     SaveConfig = true,
     IntroText = "welcome.. loading",
