@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/thanhdat4461/OrionMoblie/main/source')))()
 local Window = OrionLib:MakeWindow({
-    Name = "Neticon (RELEASED)",
+    Name = "Neticon (UNRELEASED)",
     HidePremium = false,
     SaveConfig = true,
     IntroText = "welcome.. loading",
@@ -18,7 +18,7 @@ local MainSection = MainTab:AddSection({
     Name = "player"
 })
 
--- Assuming player is the player character in your game
+
 local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
 local humanoid = character:WaitForChild("Humanoid")
@@ -74,7 +74,7 @@ local UpdatesTab = Window:MakeTab({
 
 UpdatesTab:AddLabel("pre alpha - added fly")
 
--- Create GUI for toggle button
+
 local ScreenGui = Instance.new("ScreenGui", player:WaitForChild("PlayerGui"))
 local ToggleButton = Instance.new("ImageButton")
 
@@ -83,14 +83,14 @@ ToggleButton.Position = UDim2.new(0, 10, 0, 10)
 ToggleButton.Image = "rbxassetid://4483345998" -- Change to your preferred image asset ID
 ToggleButton.Parent = ScreenGui
 
--- Function to toggle the window visibility
+
 local windowVisible = true
 ToggleButton.MouseButton1Click:Connect(function()
     windowVisible = not windowVisible
     Window.MainFrame.Visible = windowVisible
 end)
 
--- Make the button draggable
+
 local dragging
 local dragInput
 local dragStart
